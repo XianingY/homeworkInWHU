@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrammarClassifier", "GrammarClassifier.csproj", "{CAC8508E-A7E2-49CB-B106-5BC9BDA52ABE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAC8508E-A7E2-49CB-B106-5BC9BDA52ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC8508E-A7E2-49CB-B106-5BC9BDA52ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC8508E-A7E2-49CB-B106-5BC9BDA52ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC8508E-A7E2-49CB-B106-5BC9BDA52ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {905D9B81-797F-4CF5-88C3-280208637212}
+	EndGlobalSection
+EndGlobal

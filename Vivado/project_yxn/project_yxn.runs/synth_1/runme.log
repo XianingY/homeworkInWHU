@@ -1,0 +1,684 @@
+
+*** Running vivado
+    with args -log TestSingleCycleCpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TestSingleCycleCpu.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TestSingleCycleCpu.tcl -notrace
+Command: synth_design -top TestSingleCycleCpu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8844 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 431.609 ; gain = 99.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TestSingleCycleCpu' [F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v:38]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [F:/VIVADO_Project/yxn_cpu_code/CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [F:/VIVADO_Project/yxn_cpu_code/PC.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [F:/VIVADO_Project/yxn_cpu_code/PC.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PCadd1' [F:/VIVADO_Project/yxn_cpu_code/PCadd1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PCadd1' (2#1) [F:/VIVADO_Project/yxn_cpu_code/PCadd1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'InsMEM' [F:/VIVADO_Project/yxn_cpu_code/InsMEM.v:2]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/InsMEM.v:3]
+INFO: [Synth 8-3876] $readmem data file 'F:/VIVADO_Project/yxn_cpu_code/test.txt' is read successfully [F:/VIVADO_Project/yxn_cpu_code/InsMEM.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'InsMEM' (3#1) [F:/VIVADO_Project/yxn_cpu_code/InsMEM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [F:/VIVADO_Project/yxn_cpu_code/IFID.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (4#1) [F:/VIVADO_Project/yxn_cpu_code/IFID.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Control' [F:/VIVADO_Project/yxn_cpu_code/Control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'AC' [F:/VIVADO_Project/yxn_cpu_code/AC.v:6]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/AC.v:9]
+INFO: [Synth 8-226] default block is never used [F:/VIVADO_Project/yxn_cpu_code/AC.v:18]
+INFO: [Synth 8-226] default block is never used [F:/VIVADO_Project/yxn_cpu_code/AC.v:49]
+INFO: [Synth 8-226] default block is never used [F:/VIVADO_Project/yxn_cpu_code/AC.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'AC' (5#1) [F:/VIVADO_Project/yxn_cpu_code/AC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (6#1) [F:/VIVADO_Project/yxn_cpu_code/Control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [F:/VIVADO_Project/yxn_cpu_code/ImmGen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (8#1) [F:/VIVADO_Project/yxn_cpu_code/ImmGen.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [F:/VIVADO_Project/yxn_cpu_code/IDEX.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (9#1) [F:/VIVADO_Project/yxn_cpu_code/IDEX.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Stall' [F:/VIVADO_Project/yxn_cpu_code/Stall.v:5]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/Stall.v:10]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/Stall.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Stall' (10#1) [F:/VIVADO_Project/yxn_cpu_code/Stall.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MuxFWD' [F:/VIVADO_Project/yxn_cpu_code/MuxFWD.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MuxFWD' (11#1) [F:/VIVADO_Project/yxn_cpu_code/MuxFWD.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MuxRtoALU' [F:/VIVADO_Project/yxn_cpu_code/MuxRtoALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MuxRtoALU' (12#1) [F:/VIVADO_Project/yxn_cpu_code/MuxRtoALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/VIVADO_Project/yxn_cpu_code/ALU.v:2]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [F:/VIVADO_Project/yxn_cpu_code/ALU.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [F:/VIVADO_Project/yxn_cpu_code/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'FWD' [F:/VIVADO_Project/yxn_cpu_code/FWB.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FWD' (14#1) [F:/VIVADO_Project/yxn_cpu_code/FWB.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PCaddExtend' [F:/VIVADO_Project/yxn_cpu_code/PCaddExtend.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PCaddExtend' (15#1) [F:/VIVADO_Project/yxn_cpu_code/PCaddExtend.v:5]
+INFO: [Synth 8-6157] synthesizing module 'AddPC' [F:/VIVADO_Project/yxn_cpu_code/AddPC.v:2]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/AddPC.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AddPC' (16#1) [F:/VIVADO_Project/yxn_cpu_code/AddPC.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Flush' [F:/VIVADO_Project/yxn_cpu_code/Flush.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Flush' (17#1) [F:/VIVADO_Project/yxn_cpu_code/Flush.v:5]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [F:/VIVADO_Project/yxn_cpu_code/EXMEM.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (18#1) [F:/VIVADO_Project/yxn_cpu_code/EXMEM.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DataMEM' [F:/VIVADO_Project/yxn_cpu_code/DataMEM.v:4]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/DataMEM.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/VIVADO_Project/yxn_cpu_code/DataMEM.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'DataMEM' (19#1) [F:/VIVADO_Project/yxn_cpu_code/DataMEM.v:4]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [F:/VIVADO_Project/yxn_cpu_code/MEMWB.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (20#1) [F:/VIVADO_Project/yxn_cpu_code/MEMWB.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MuxMemtoR' [F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v:1]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "1" *) [F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'MuxMemtoR' (21#1) [F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (22#1) [F:/VIVADO_Project/yxn_cpu_code/CPU.v:1]
+INFO: [Synth 8-6085] Hierarchical reference on 'ram' stops possible memory inference [F:/VIVADO_Project/yxn_cpu_code/DataMEM.v:16]
+INFO: [Synth 8-6085] Hierarchical reference on 'rf' stops possible memory inference [F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v:16]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [F:/VIVADO_Project/yxn_cpu_code/seg7x16.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/VIVADO_Project/yxn_cpu_code/seg7x16.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (23#1) [F:/VIVADO_Project/yxn_cpu_code/seg7x16.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'TestSingleCycleCpu' (24#1) [F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v:2]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[24]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[23]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[22]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[21]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[20]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[19]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[18]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[17]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[16]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[15]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[11]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[10]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[9]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[8]
+WARNING: [Synth 8-3331] design Control has unconnected port instr[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 546.879 ; gain = 214.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 546.879 ; gain = 214.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 546.879 ; gain = 214.641
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/VIVADO_Project/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [F:/VIVADO_Project/icf.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [F:/VIVADO_Project/icf.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [F:/VIVADO_Project/icf.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [F:/VIVADO_Project/icf.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [F:/VIVADO_Project/icf.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [F:/VIVADO_Project/icf.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [F:/VIVADO_Project/icf.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [F:/VIVADO_Project/icf.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [F:/VIVADO_Project/icf.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [F:/VIVADO_Project/icf.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [F:/VIVADO_Project/icf.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [F:/VIVADO_Project/icf.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [F:/VIVADO_Project/icf.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [F:/VIVADO_Project/icf.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [F:/VIVADO_Project/icf.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [F:/VIVADO_Project/icf.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [F:/VIVADO_Project/icf.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [F:/VIVADO_Project/icf.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [F:/VIVADO_Project/icf.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [F:/VIVADO_Project/icf.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [F:/VIVADO_Project/icf.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [F:/VIVADO_Project/icf.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [F:/VIVADO_Project/icf.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [F:/VIVADO_Project/icf.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VIVADO_Project/icf.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/VIVADO_Project/icf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/VIVADO_Project/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TestSingleCycleCpu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TestSingleCycleCpu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.914 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.957 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 882.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 882.957 ; gain = 550.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 882.957 ; gain = 550.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 882.957 ; gain = 550.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_3_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "p_2_in" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "controlsOut0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'AP_reg' [F:/VIVADO_Project/yxn_cpu_code/AC.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'MemToReg_reg' [F:/VIVADO_Project/yxn_cpu_code/Control.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'Zero_reg' [F:/VIVADO_Project/yxn_cpu_code/ALU.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'AluResult_reg' [F:/VIVADO_Project/yxn_cpu_code/ALU.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 882.957 ; gain = 550.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |DataMEM                 |           1|     38994|
+|2     |CPU__GB1                |           1|     16153|
+|3     |TestSingleCycleCpu__GC0 |           1|      2338|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 52    
+	               19 Bit    Registers := 3     
+	                8 Bit    Registers := 102   
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 75    
+	  34 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 4     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 656   
+	   4 Input      8 Bit        Muxes := 101   
+	   3 Input      8 Bit        Muxes := 41    
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	  11 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TestSingleCycleCpu 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module DataMEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 101   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 655   
+	   4 Input      8 Bit        Muxes := 101   
+	   3 Input      8 Bit        Muxes := 41    
+	   3 Input      2 Bit        Muxes := 3     
+Module PCadd1__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module InsMEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  34 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module IFID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module AC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 41    
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 1     
+Module IDEX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               19 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 6     
+Module MuxFWD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+Module MuxRtoALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+Module FWD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module PCadd1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module PCaddExtend 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module AddPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module EXMEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	               19 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MEMWB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               19 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+Module MuxMemtoR 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "p_2_in" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "E0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "controlsOut0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\u_test/o_seg_r_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:27 . Memory (MB): peak = 1036.000 ; gain = 703.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |DataMEM                 |           1|     24824|
+|2     |CPU__GB1                |           1|      9212|
+|3     |TestSingleCycleCpu__GC0 |           1|      1998|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1036.000 ; gain = 703.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:38 . Memory (MB): peak = 1036.000 ; gain = 703.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |DataMEM                 |           1|     24824|
+|2     |CPU__GB1                |           1|      9212|
+|3     |TestSingleCycleCpu__GC0 |           1|      1998|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:46 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    59|
+|3     |LUT1   |    39|
+|4     |LUT2   |   534|
+|5     |LUT3   |   505|
+|6     |LUT4   |   753|
+|7     |LUT5   |  1551|
+|8     |LUT6   |  4953|
+|9     |MUXF7  |   891|
+|10    |MUXF8  |   306|
+|11    |FDCE   |  2477|
+|12    |FDPE   |    23|
+|13    |FDRE   |    32|
+|14    |LD     |    33|
+|15    |LDC    |     1|
+|16    |LDCP   |     1|
+|17    |IBUF   |    18|
+|18    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-------------+------+
+|      |Instance        |Module       |Cells |
++------+----------------+-------------+------+
+|1     |top             |             | 12196|
+|2     |  myCPU         |CPU          | 11260|
+|3     |    add1        |PCadd1       |     8|
+|4     |    addextend   |PCaddExtend  |     8|
+|5     |    addpc       |AddPC        |     0|
+|6     |    alu         |ALU          |    91|
+|7     |    control     |Control      |     4|
+|8     |      alucont   |AC           |     0|
+|9     |    datamem     |DataMEM      |  6700|
+|10    |    insmem      |InsMEM       |    19|
+|11    |    muxmemtor   |MuxMemtoR    |     0|
+|12    |    myEXMEM     |EXMEM        |   219|
+|13    |    myIDEX      |IDEX         |  1056|
+|14    |    myIFID      |IFID         |   287|
+|15    |    myMEMWB     |MEMWB        |   767|
+|16    |    mystall     |Stall        |     0|
+|17    |    pc          |PC           |    32|
+|18    |    pcNextadder |PCadd1_0     |     8|
+|19    |    regfile     |RegisterFile |  2048|
+|20    |  u_test        |seg7x16      |    92|
++------+----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:43 . Memory (MB): peak = 1137.746 ; gain = 469.430
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:51 . Memory (MB): peak = 1137.746 ; gain = 805.508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1137.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  LD => LDCE: 33 instances
+  LDC => LDCE: 1 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 44 Warnings, 24 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:55 . Memory (MB): peak = 1137.746 ; gain = 818.355
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1137.746 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/VIVADO_Project/project_yxn/project_yxn.runs/synth_1/TestSingleCycleCpu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TestSingleCycleCpu_utilization_synth.rpt -pb TestSingleCycleCpu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 19:27:09 2024...

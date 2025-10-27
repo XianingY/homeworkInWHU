@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 19 12:14:38 2024
+# Process ID: 12864
+# Current directory: D:/Repo/GitHub/HomeworkWHU/Vivado/project_Snake
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22636 D:\Repo\GitHub\HomeworkWHU\Vivado\project_Snake\project_Snake.xpr
+# Log file: D:/Repo/GitHub/HomeworkWHU/Vivado/project_Snake/vivado.log
+# Journal file: D:/Repo/GitHub/HomeworkWHU/Vivado/project_Snake\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Repo/GitHub/HomeworkWHU/Vivado/project_Snake/project_Snake.xpr
+INFO: [Project 1-313] Project file moved from 'F:/VIVADO_Project/project_Snake' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Repo/GitHub/HomeworkWHU/Vivado/icf.xdc', nor could it be found using path 'F:/VIVADO_Project/icf.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/Repo/GitHub/HomeworkWHU/Vivado/project_Snake/project_Snake.ip_user_files', nor could it be found using path 'F:/VIVADO_Project/project_Snake/project_Snake.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 12:14:50 2024...

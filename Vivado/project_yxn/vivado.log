@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 27 16:46:18 2024
+# Process ID: 692
+# Current directory: F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/project_yxn
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4488 F:\VIVADO_Project\2022302111073_杨夏宁_实验代码\project_yxn\project_yxn.xpr
+# Log file: F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/project_yxn/vivado.log
+# Journal file: F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/project_yxn\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/project_yxn/project_yxn.xpr
+INFO: [Project 1-313] Project file moved from 'F:/VIVADO_Project/project_yxn' since last save.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AluOp.vh'; using path 'F:/VIVADO_Project/yxn_cpu_code/AluOp.vh' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AddPC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AddPC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/CPU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/CPU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Control.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Control.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/DataMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/DataMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/EXMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/EXMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/FWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/FWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Flush.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Flush.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IDEX.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IDEX.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IFID.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IFID.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ImmGen.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ImmGen.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/InsMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/InsMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MEMWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MEMWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxFWD.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxFWD.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxMemtoR.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxRtoALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxRtoALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCadd1.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCadd1.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCaddExtend.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCaddExtend.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/RegisterFile.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Stall.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Stall.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/seg7x16.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/seg7x16.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/TestSingleCycleCpu.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/test.coe'; using path 'F:/VIVADO_Project/test.coe' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/icf.xdc'; using path 'F:/VIVADO_Project/icf.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AluOp.vh'; using path 'F:/VIVADO_Project/yxn_cpu_code/AluOp.vh' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AddPC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AddPC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/CPU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/CPU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Control.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Control.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/DataMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/DataMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/EXMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/EXMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/FWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/FWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Flush.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Flush.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IDEX.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IDEX.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IFID.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IFID.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ImmGen.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ImmGen.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/InsMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/InsMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MEMWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MEMWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxFWD.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxFWD.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxMemtoR.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxRtoALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxRtoALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCadd1.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCadd1.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCaddExtend.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCaddExtend.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/RegisterFile.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Stall.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Stall.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/seg7x16.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/seg7x16.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/TestSingleCycleCpu.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/test.coe'; using path 'F:/VIVADO_Project/test.coe' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/icf.xdc'; using path 'F:/VIVADO_Project/icf.xdc' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AluOp.vh'; using path 'F:/VIVADO_Project/yxn_cpu_code/AluOp.vh' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/AddPC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/AddPC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/CPU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/CPU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Control.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Control.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/DataMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/DataMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/EXMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/EXMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/FWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/FWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Flush.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Flush.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IDEX.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IDEX.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/IFID.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/IFID.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/ImmGen.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/ImmGen.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/InsMEM.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/InsMEM.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MEMWB.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MEMWB.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxFWD.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxFWD.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxMemtoR.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxMemtoR.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/MuxRtoALU.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/MuxRtoALU.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PC.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PC.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCadd1.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCadd1.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/PCaddExtend.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/PCaddExtend.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/RegisterFile.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/RegisterFile.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/Stall.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/Stall.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/seg7x16.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/seg7x16.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/yxn_cpu_code/TestSingleCycleCpu.v'; using path 'F:/VIVADO_Project/yxn_cpu_code/TestSingleCycleCpu.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/test.coe'; using path 'F:/VIVADO_Project/test.coe' instead.
+WARNING: [Project 1-312] File not found as 'F:/VIVADO_Project/2022302111073_杨夏宁_实验代码/icf.xdc'; using path 'F:/VIVADO_Project/icf.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 780.352 ; gain = 191.660
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 16:47:21 2024...

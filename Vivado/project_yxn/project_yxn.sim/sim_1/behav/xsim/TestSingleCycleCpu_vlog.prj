@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../yxn_cpu_code" \
+"../../../../../yxn_cpu_code/AC.v" \
+"../../../../../yxn_cpu_code/ALU.v" \
+"../../../../../yxn_cpu_code/AddPC.v" \
+"../../../../../yxn_cpu_code/CPU.v" \
+"../../../../../yxn_cpu_code/Control.v" \
+"../../../../../yxn_cpu_code/DataMEM.v" \
+"../../../../../yxn_cpu_code/EXMEM.v" \
+"../../../../../yxn_cpu_code/FWB.v" \
+"../../../../../yxn_cpu_code/Flush.v" \
+"../../../../../yxn_cpu_code/IDEX.v" \
+"../../../../../yxn_cpu_code/IFID.v" \
+"../../../../../yxn_cpu_code/ImmGen.v" \
+"../../../../../yxn_cpu_code/InsMEM.v" \
+"../../../../../yxn_cpu_code/MEMWB.v" \
+"../../../../../yxn_cpu_code/MuxFWD.v" \
+"../../../../../yxn_cpu_code/MuxMemtoR.v" \
+"../../../../../yxn_cpu_code/MuxRtoALU.v" \
+"../../../../../yxn_cpu_code/PC.v" \
+"../../../../../yxn_cpu_code/PCadd1.v" \
+"../../../../../yxn_cpu_code/PCaddExtend.v" \
+"../../../../../yxn_cpu_code/RegisterFile.v" \
+"../../../../../yxn_cpu_code/Stall.v" \
+"../../../../../yxn_cpu_code/seg7x16.v" \
+"../../../../../yxn_cpu_code/TestSingleCycleCpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
